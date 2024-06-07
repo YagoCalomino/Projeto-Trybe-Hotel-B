@@ -82,6 +82,32 @@ public class IntegrationTest: IClassFixture<WebApplicationFactory<Program>>
         Assert.Equal(System.Net.HttpStatusCode.OK, response?.StatusCode);
     }
    
-    
-    
+    [Theory(DisplayName = "POST /city")]
+    [InlineData("/city")]
+    public async Task TestPost(string endpoint)
+    {
+        var jsonContent = JsonConvert.SerializeObject(new City { CityId = 3, Name = "São Paulo" });
+        var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
+        var result = await _clientTest.PostAsync(endpoint, content);
+        Assert.Equal(System.Net.HttpStatusCode.Created, result?.StatusCode);
+    }
+
+    [Theory(DisplayName = "GET /hotel")]
+    [InlineData("/hotel")]
+    public async Task TestGetHotel(string endpoint)
+    {
+        var result = await _clientTest.GetAsync(endpoint);
+        Assert.Equal(System.Net.HttpStatusCode.OK, result?.StatusCode);
+    }
+
+    [Theory(DisplayName = "POST /hotel")]
+    [InlineData("/hotel")]
+    public async Task TestPostHotel(string endpoint)
+    {
+        var hotel = new Hotel { Name = "Trybe Hotel Palmas 2.0", Address = "Address 4", CityId = 2 };
+        var jsonContent = JsonConvert.SerializeObject(hotel);
+        var content = new StringContent(jsonContent, System.Text.Encoding.UTF8, "application/json");
+        var result = await _clientTest.PostAsync(endpoint, content);
+        Assert.Equal(System.Net.HttpStatusCode.Created, result?.StatusCode);
+    }
 }

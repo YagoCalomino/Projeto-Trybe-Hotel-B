@@ -17,11 +17,43 @@ namespace TrybeHotel.Repository
 
         public UserDto Login(LoginDto login)
         {
-           throw new NotImplementedException();
+           var user = _context.Users
+                .FirstOrDefault((u) => u.Email == login.Email && u.Password == login.Password);
+
+            if (user == null)
+                throw new Exception("Incorrect e-mail or password");
+
+            return new UserDto {
+                UserId = user.UserId,
+                Name = user.Name,
+                Email = user.Email,
+                UserType = user.UserType
+            };
         }
         public UserDto Add(UserDtoInsert user)
         {
-            throw new NotImplementedException(); 
+            var userExists = _context.Users
+                .Any((u) => u.Email == user.Email);
+
+            if (userExists)
+                throw new Exception("User email already exists");
+
+            var newUser = new User {
+                Name = user.Name,
+                Email = user.Email,
+                Password = user.Password,
+                UserType = "client"
+            };
+
+            _context.Users.Add(newUser);
+            _context.SaveChanges();
+
+            return new UserDto {
+                UserId = newUser.UserId,
+                Name = newUser.Name,
+                Email = newUser.Email,
+                UserType = newUser.UserType
+            };
         }
 
         public UserDto GetUserByEmail(string userEmail)

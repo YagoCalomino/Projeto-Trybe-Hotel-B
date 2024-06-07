@@ -1,5 +1,6 @@
 using TrybeHotel.Models;
 using TrybeHotel.Dto;
+using Microsoft.EntityFrameworkCore;
 
 namespace TrybeHotel.Repository
 {
@@ -13,12 +14,34 @@ namespace TrybeHotel.Repository
 
         public IEnumerable<HotelDto> GetHotels()
         {
-            throw new NotImplementedException();
+            return _context.Hotels.Select(hotel => new HotelDto
+            {
+                HotelId = hotel.HotelId,
+                Name = hotel.Name,
+                Address = hotel.Address,
+                CityId = hotel.CityId,
+                CityName = hotel.City!.Name
+            }).ToList();
         }
         
         public HotelDto AddHotel(Hotel hotel)
-        {
-            throw new NotImplementedException();
-        }
+            {
+                _context.Hotels.Add(hotel);
+                _context.SaveChanges();
+
+                var newlyCreatedHotel = _context.Hotels
+                                            .Where(h => h.HotelId == hotel.HotelId)
+                                            .Include(h => h.City)
+                                            .FirstOrDefault();
+
+                return new HotelDto
+                {
+                    HotelId = newlyCreatedHotel.HotelId,
+                    Name = newlyCreatedHotel.Name,
+                    Address = newlyCreatedHotel.Address,
+                    CityId = newlyCreatedHotel.CityId,
+                    CityName = newlyCreatedHotel.City!.Name
+                };
+            }
     }
 }
