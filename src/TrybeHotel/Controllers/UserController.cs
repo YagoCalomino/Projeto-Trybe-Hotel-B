@@ -19,8 +19,18 @@ namespace TrybeHotel.Controllers
         }
         
         [HttpGet]
-        public IActionResult GetUsers(){
-            throw new NotImplementedException();
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "Admin")]
+        public IActionResult GetUsers()
+        {
+            try
+            {
+                return Ok(_repository.GetUsers());
+            }
+            catch (Exception error)
+            {
+                return Unauthorized(new { message = error.Message });
+            }
         }
 
         [HttpPost]

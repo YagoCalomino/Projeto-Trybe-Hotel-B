@@ -63,8 +63,20 @@ namespace TrybeHotel.Repository
 
         public IEnumerable<UserDto> GetUsers()
         {
-           throw new NotImplementedException();
-        }
+            var users = _context.Users
+                .Select(u => new UserDto {
+                    UserId = u.UserId,
+                    Name = u.Name,
+                    Email = u.Email,
+                    UserType = u.UserType
+                });
 
+            if (users == null)
+            {
+                throw new Exception("Failed to retrieve users.");
+            }
+
+            return users;
+        }
     }
 }

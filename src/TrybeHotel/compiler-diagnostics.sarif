@@ -28,6 +28,237 @@
           }
         },
         {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 'value' in 'Claim.Claim(string type, string value)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Services/TokenGenerator.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 57,
+                  "endLine": 44,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Cities' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 12,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Hotels' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 12,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Rooms' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 12,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Bookings' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 12,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 12,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Cities' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 12,
+                  "endLine": 17,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Hotels' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 12,
+                  "endLine": 17,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Rooms' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 12,
+                  "endLine": 17,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Bookings' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 12,
+                  "endLine": 17,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 12,
+                  "endLine": 17,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS8602",
           "level": "warning",
           "message": "Dereference of a possibly null reference.",
@@ -112,228 +343,18 @@
           }
         },
         {
-          "ruleId": "CS8618",
+          "ruleId": "CS8602",
           "level": "warning",
-          "message": "Non-nullable property 'Cities' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
+          "message": "Dereference of a possibly null reference.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/HotelRepository.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 12,
-                  "endLine": 13,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Hotels' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 12,
-                  "endLine": 13,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Rooms' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 12,
-                  "endLine": 13,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Bookings' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 12,
-                  "endLine": 13,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 13,
-                  "startColumn": 12,
-                  "endLine": 13,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Cities' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 12,
-                  "endLine": 17,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Hotels' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 12,
-                  "endLine": 17,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Rooms' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 12,
-                  "endLine": 17,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Bookings' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 12,
-                  "endLine": 17,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
-          "message": "Non-nullable property 'Users' must contain a non-null value when exiting constructor. Consider declaring the property as nullable.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/TrybeHotelContext.cs",
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 12,
-                  "endLine": 17,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8604",
-          "level": "warning",
-          "message": "Possible null reference argument for parameter 'value' in 'Claim.Claim(string type, string value)'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Services/TokenGenerator.cs",
-                "region": {
-                  "startLine": 44,
-                  "startColumn": 57,
-                  "endLine": 44,
-                  "endColumn": 67
+                  "startLine": 39,
+                  "startColumn": 31,
+                  "endLine": 39,
+                  "endColumn": 48
                 }
               }
             }
@@ -349,12 +370,117 @@
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/HotelRepository.cs",
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
                 "region": {
-                  "startLine": 39,
+                  "startLine": 74,
+                  "startColumn": 39,
+                  "endLine": 74,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 43,
+                  "endLine": 75,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 66,
+                  "endLine": 76,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 26,
+                  "endLine": 83,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 89,
                   "startColumn": 31,
-                  "endLine": 39,
-                  "endColumn": 48
+                  "endLine": 89,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/yagocalomino/TrybeC%23/csharp-034-csharp-projeto-trybe-hotel-fase-b/src/TrybeHotel/Repository/BookingRepository.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 32,
+                  "endLine": 93,
+                  "endColumn": 55
                 }
               }
             }

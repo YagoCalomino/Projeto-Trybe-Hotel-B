@@ -40,9 +40,24 @@ namespace TrybeHotel.Controllers
 
 
         [HttpGet("{Bookingid}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "Client")]
         public IActionResult GetBooking(int Bookingid)
         {           
-            throw new NotImplementedException();
+            var token = HttpContext.User.Identity as ClaimsIdentity;
+            var email = token?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+
+            try
+            {
+                if (email == null)
+                    throw new Exception("User email not found in token");
+
+                return Ok(_repository.GetBooking(Bookingid, email));
+            }
+            catch (Exception error)
+            {
+                return Unauthorized(new { message = error.Message });
+            }
         }
     }
 }
